@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let pinnedText = document.createElement('li')
     pinnedText.innerText = task
     list.appendChild(pinnedText)
+    const deleteBtn = document.createElement('button')
+    deleteBtn.innerText = "X"
+    pinnedText.append(deleteBtn)
+    deleteBtn.addEventListener('click', () => {
+      pinnedText.remove()
+    })
   }
 
 });
