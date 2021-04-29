@@ -1,3 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+  const submitButton = document.querySelector('#create-task-form')
+  submitButton.addEventListener('submit', (event) => {
+    event.preventDefault()
+    
+  })
 });
